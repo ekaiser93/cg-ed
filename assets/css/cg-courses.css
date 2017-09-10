@@ -16,6 +16,10 @@ body {
   clear: both;
 }
 
+.active {
+  font-weight: bold;
+}
+
 /*styles section*/
 
 h1 {
