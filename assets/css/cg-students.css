@@ -135,10 +135,11 @@ main {
   flex: 1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 0;
   }
 }
 
@@ -151,6 +152,18 @@ section {
   background-color: #FDFEFE;
 }
 
+@media only screen and (max-width: 1200px) {
+  section {
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  section {
+    flex-basis: 70%;
+  }
+}
+
 .photo-name-major {
   border-bottom: 2px solid #414042;
   text-align: center;
@@ -160,7 +173,7 @@ section {
 .photo-name-major img {
   border-radius: 50%;
   width: 130px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .student-info {
@@ -180,12 +193,28 @@ section {
   margin-left: 20px;
 }
 
-.class-list {
-  text-align: center;
+.small-section {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 30px;
 }
 
-.class-list ul li {
-  list-style-type: none;
+.first-half {
+  display: inline-flex;
+  width: 100px;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.class-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.class-list p {
+  flex-direction: column;
+  margin: 0;
 }
 
 footer {
