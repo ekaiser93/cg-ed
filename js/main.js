@@ -58,36 +58,56 @@ specified in the paramenter of the function*/
 var courseNameAndDept = [
   ['Intro to Physics','Physics'],
   ['Geometry I', 'Math'],
-]
+  ['Calculus', 'Math']
+];
 
 //start of funtion//
 
 function getCourseSelection (courseArray,userDeptInput) {
 
-    for (var i = 0; i <= courseArray.length; i++) {
+  var newCourseSelection = [];
+
+    for (var i = 0; i < courseArray.length; i++) {
+
       if (courseArray[i][1]===userDeptInput) {
-        return courseArray[i][0];
+        newCourseSelection.push(courseArray[i]);
       }
     }
+    return newCourseSelection;
 }
 
 /*okay, now I will be prompting the user for a department and checking to see
 if their answer is valid.  Then, I will use my getCourseSelection function to
 get the courses and return it to them.*/
 
+
 var gotDept = false;
 
-while (gotDept==false){
+while (gotDept==false) {
 
     var userDept = prompt("Please enter a department name you wish to know the courses in.");
 
     if (typeof userDept === 'string') {
       var totalSelection = getCourseSelection(courseNameAndDept, userDept);
-      alert("The courses offered are " + totalSelection + ".");
+
+
+      var message = "The courses offered in " + userDept + " are ";
+
+      for (var i = 0; i < totalSelection.length; i++){
+        message += totalSelection[i][0];
+
+        if(i<totalSelection.length-1){
+          message += ", ";
+        }
+
+        if(i==totalSelection.length-1){
+          message += ".";
+        }
+      }
+      alert(message);
       gotDept=true;
     }
-
     else {
-      var userDept = prompt("That is not a valid entry.  Please enter a department.")
+      var userDept = prompt("That is not a valid entry.  Please enter a department.");
     }
-  }
+}
