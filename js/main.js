@@ -111,3 +111,93 @@ while (gotDept==false) {
       var userDept = prompt("That is not a valid entry.  Please enter a department.");
     }
 }
+
+//starting part three of problems
+/*I need to create two anonymous functions that takes in one parameter, class,
+and alerts depending on the level - hs or college*/
+
+var welcomeHighSchoolStudent = function ( className ) {
+  alert("You're still a " + className + " in High School!");
+};
+
+var welcomeCollegeStudent = function ( className ) {
+  alert("Welcome " + className + "!");
+};
+
+function gradDate (month, year) {
+  return (month + " " + year);
+};
+
+// console.log(gradDate("December", 2018));
+
+//now I'm going to use these functions as parameters
+
+// console.log(welcomeStudentsByGraduatingClass (gotGraduationDate));
+
+
+  function welcomeStudentsByGraduatingClass(graduationDate){
+
+      if (graduationDate == "December 2017" || "May 2018"){
+        var studentStatus = "Senior";
+        gotStudentStatus = true;
+        return studentStatus;
+      }
+
+      else if (graduationDate == "December 2018" || "May 2019"){
+        var studentStatus = "Junior";
+        gotStudentStatus = true;
+        return studentStatus;
+      }
+
+      else if (graduationDate == "December 2019" || "May 2020"){
+        var studentStatus = "Sophomore";
+        gotStudentStatus = true;
+        return studentStatus;
+      }
+
+      else if (graduationDate == "December 2020" || "May 2021"){
+        var studentStatus = "Freshman";
+        gotStudentStatus = true;
+        return studentStatus;
+      }
+    }
+// console.log(welcomeStudentsByGraduatingClass(gradDate("December", 2018)));
+
+var gotStudentStatusMonth = false;
+var gotStudentStatusYear = false;
+var gotStudentStatusCollege = false;
+
+while (gotStudentStatusMonth===false && gotStudentStatusYear===false && gotStudentStatusCollege===false){
+
+      var gradDateInputMonth = prompt("What month will you graduate?");
+        if (gradDateInputMonth === "May" || gradDateInputMonth === "December") {
+            gotStudentStatusMonth = true;
+            alert(gradDateInputMonth);
+        }
+
+        else {
+          gotStudentStatusMonth = false;
+          gradDateInputMonth = prompt ("Please enter a valid item.");
+        }
+
+        var gradDateInputYear = prompt("What year will you graduate?");
+            if (gradDateInputYear === "2017" || gradDateInputYear === "2018" || gradDateInputYear === "2019" || gradDateInputYear === "2020" || gradDateInputYear === "2021") {
+            gotStudentStatusYear = true;
+            alert(gradDateInputYear);
+          }
+
+            else {
+              gotStudentStatusYear = false;
+              gradDateInputMonth = prompt ("Please enter a valid item.");
+          }
+
+          var collegeOrHighSchool = prompt("What year will you graduate from college?");
+              if (collegeOrHighSchool === "2017" || collegeOrHighSchool === "2018" || collegeOrHighSchool === "2019" || collegeOrHighSchool === "2020" || collegeOrHighSchool === "2021"){
+                gotStudentStatusCollege = true;
+                console.log (welcomeCollegeStudent(welcomeStudentsByGraduatingClass(gradDate(gradDateInputMonth,gradDateInputYear))));
+              }
+
+              else if (collegeOrHighSchool === "2022" || collegeOrHighSchool === "2023" || collegeOrHighSchool === "2024" || collegeOrHighSchool === "2025" || collegeOrHighSchool === "2026") {
+                console.log (welcomeHighSchoolStudent(welcomeStudentsByGraduatingClass(gradDate(gradDateInputMonth,gradDateInputYear))));
+              }
+}
