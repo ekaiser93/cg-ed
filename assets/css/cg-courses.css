@@ -47,6 +47,8 @@ p {
 
 a {
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14pt;
   color: #FDFEFE;
 }
 
@@ -147,6 +149,71 @@ main {
     display: flex;
     flex-direction: column;
   }
+}
+
+.filter-wrapper {
+  width: 100%;
+  margin: 0 0 20px 10px;
+}
+
+.filter-courses {
+  width: 100%;
+}
+
+a.drop-down {
+  color: #414042;
+  padding: 10px;
+  border: 2px solid #414042;
+  background-color: #FDFEFE;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 20%;
+}
+
+a.drop-down::after {
+  content: ' ▾';
+}
+
+.filter-here {
+  width: 90px;
+  display: inline-block;
+  height: 100px;
+  margin-top: 12px;
+}
+
+a.filter-bttn {
+  background-color: #414042;
+  font-family: 'Lato', sans-serif;
+  font-size: 12pt;
+  font-weight: 600;
+  width: 50px;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+}
+
+.drop-down-dept {
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  width: auto;
+  text-decoration: none;
+  display: block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.drop-section {
+  display: inline-block;
+  padding: 10px 0;
+  height: 60px;
+}
+
+.drop-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 section {

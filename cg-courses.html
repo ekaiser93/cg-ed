@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
       <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
-    <title>Codergirl Teachers</title>
+    <title>Codergirl Courses</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <link href='./assets/css/cg-courses.css' media='all' rel='stylesheet'>
     <style>
@@ -11,7 +12,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="cg-courses">
 
     <nav>
      <header>
@@ -26,90 +27,33 @@
 
   <main>
 
-  <section>
-    <div class="course-type">
-      <div class="course-type-child">
-      <h1>Astronomy</h1></div>
-      <h2>Physics</h2>
+  <div class="filter-wrapper">
+    <h2>Filter by Department or Semester</h2>
+      <div class = "drop-section-wrapper">
+        <div class="drop-section">
+        <a class="drop-down">Select Department</a>
+          <ul class="drop-down-dept">
+            <li>Science</li>
+            <li>Art</li>
+            <li>Chorus</li>
+            <li>Math</li>
+          </ul>
+        </div>
+        <div class="drop-section">
+        <a class="drop-down">Select Semester</a>
+          <ul class="drop-down-dept">
+            <li>Fall 2017</li>
+            <li>Spring 2018</li>
+            <li>Fall 2018</li>
+          </ul>
+        </div>
+        <div class="filter-here">
+        <a class="filter-bttn">Filter</a>
+        </div>
       </div>
-    </div>
-    <div class="teacher-semester">
-      <div class="teacher-semester-child">
-      <h2>Teacher:</h2><p>Sally Jones</p>
-      </div>
-      <div class="teacher-semester-child">
-      <h2>Semester:</h2><p>Fall 2017</p>
-      </div>
-    </div>
-  </section>
+  </div>
 
-    <section>
-      <div class="course-type">
-        <div class="course-type-child">
-        <h1>Astronomy</h1></div>
-        <h2>Physics</h2>
-        </div>
-      </div>
-      <div class="teacher-semester">
-        <div class="teacher-semester-child">
-        <h2>Teacher:</h2><p>Sally Jones</p>
-        </div>
-        <div class="teacher-semester-child">
-        <h2>Semester:</h2><p>Fall 2017</p>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="course-type">
-        <div class="course-type-child">
-        <h1>Astronomy</h1></div>
-        <h2>Physics</h2>
-        </div>
-      </div>
-      <div class="teacher-semester">
-        <div class="teacher-semester-child">
-        <h2>Teacher:</h2><p>Sally Jones</p>
-        </div>
-        <div class="teacher-semester-child">
-        <h2>Semester:</h2><p>Fall 2017</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="course-type">
-        <div class="course-type-child">
-        <h1>Astronomy</h1></div>
-        <h2>Physics</h2>
-        </div>
-      </div>
-      <div class="teacher-semester">
-        <div class="teacher-semester-child">
-        <h2>Teacher:</h2><p>Sally Jones</p>
-        </div>
-        <div class="teacher-semester-child">
-        <h2>Semester:</h2><p>Fall 2017</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="course-type">
-        <div class="course-type-child">
-        <h1>Astronomy</h1></div>
-        <h2>Physics</h2>
-        </div>
-      </div>
-      <div class="teacher-semester">
-        <div class="teacher-semester-child">
-        <h2>Teacher:</h2><p>Sally Jones</p>
-        </div>
-        <div class="teacher-semester-child">
-        <h2>Semester:</h2><p>Fall 2017</p>
-        </div>
-      </div>
-    </section>
 
   </main>
 
@@ -118,4 +62,5 @@
   </footer>
 
   </body>
+
 </html>

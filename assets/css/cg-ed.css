@@ -141,6 +141,43 @@ main {
   }
 }
 
+.give-rating {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #414042;
+  font-family: 'Lato', sans-serif;
+  font-size: 14pt;
+}
+
+.rating-section {
+  margin: 20px;
+  padding-right: 30px;
+  width: 20%;
+}
+
+.close {
+  align-self: flex-start;
+}
+
+.for-rating {
+  border: 1px solid #414042;
+  background: #FFFFFF;
+  padding: 14px;
+  width: 70px;
+  -webkit-appearance:none;
+  margin: 4px 0 20px 0;
+}
+
+.submit-rating {
+  background: #414042;
+  color: #FFFFFF;
+  text-align: center;
+  width: 110px;
+  padding: 10px;
+}
+
 section {
   border: 2px solid #414042;
   display: inline-flex;

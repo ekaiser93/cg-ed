@@ -4,6 +4,7 @@
     <meta charset="utf-8">
       <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
     <title>Codergirl Teachers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <link href='./assets/css/cg-students.css' media='all' rel='stylesheet'>
     <style>
@@ -11,7 +12,8 @@
     </style>
   </head>
 
-  <body>
+  <body class="cg-students">
+
 
     <nav>
      <header>
@@ -26,11 +28,40 @@
 
   <main>
 
+    <div class="new-student-form">
+      <form>
+
+      <div class = "submission-section">
+        <label for="name">Name: </label>
+        <input type="text" class="submit-name" name="name" placeholder="Your name">
+      </div>
+
+      <div class = "submission-section">
+        <label for="major">Major: </label>
+        <input type="text" class="submit-major" name="major" placeholder="Your major">
+      </div>
+
+      <div class = "submission-section">
+        <label for="email">Email: </label>
+        <input type="text" class="submit-email" name="email" placeholder="Your email">
+      </div>
+
+      <div class = "submission-section">
+        <label for="major">GPA: </label>
+        <input type="number" class="submit-gpa" name="gpa" placeholder="0.0 - 5.0">
+      </div>
+
+      </form>
+
+      <button>Create Student</button>
+
+    </div>
+
   <section>
     <div class="photo-name-major">
       <img src="assets/images/Frodo.jpeg" alt="Frodo" class="llama-img">
       <h1>Frodo Llamaface</h1>
-      <h2>Fall 2017</h2>
+      <h2>Science</h2>
     </div>
     <div class="student-info">
       <div class="student-personal"><h2>Email:</h2><p>frodol@cg.edu</p></div>
@@ -50,7 +81,7 @@
     <div class="photo-name-major">
       <img src="assets/images/Emma.jpg" alt="Emma" class="llama-img">
       <h1>Emma Llamaface</h1>
-      <h2>Fall 2017</h2>
+      <h2>Art History</h2>
     </div>
     <div class="student-info">
       <div class="student-personal"><h2>Email:</h2><p>emmal@cg.edu</p></div>
@@ -70,7 +101,7 @@
     <div class="photo-name-major">
       <img src="assets/images/Andy.jpg" alt="Andy" class="llama-img">
       <h1>Andy Llamaface</h1>
-      <h2>Fall 2017</h2>
+      <h2>Geometry</h2>
     </div>
     <div class="student-info">
       <div class="student-personal"><h2>Email:</h2><p>andyl@cg.edu</p></div>
